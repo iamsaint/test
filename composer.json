@@ -15,9 +15,7 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "bin": [
-        "psalm"
-    ],
+    "bin": ["bin/psalm"],
     "scripts": {
         "psalm": "./psalm --find-dead-code"
     }
