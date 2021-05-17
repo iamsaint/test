@@ -1,0 +1,24 @@
+{
+    "name": "iasmaint/test",
+    "type": "library",
+    "require": {
+        "php": "^7.1|^8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Psalm\\": "src/Psalm/"
+        },
+        "files": [
+            "src/functions.php",
+            "src/spl_object_id.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "bin": [
+        "psalm"
+    ],
+    "scripts": {
+        "psalm": "./psalm --find-dead-code"
+    }
+}
